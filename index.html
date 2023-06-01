@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro do Timeline</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registro do Timeline</h1>
+    <form id="timelineForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      <button onclick="register('Entrou')">Entrei no Timeline!</button>
+      <button onclick="register('Saiu')">Saí do Timeline!</button>
+    </form>
+    <div id="status"></div>
+    <div id="lastAccess"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
