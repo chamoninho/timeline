@@ -17,7 +17,7 @@ function registerEntry(name) {
   })
   .then(response => {
     if (response.ok) {
-      displayStatus("Alguém está usando o Timeline.");
+      displayStatus("Alguem esta usando o Timeline.");
     } else {
       displayStatus("Erro ao registrar entrada.");
     }
@@ -33,13 +33,13 @@ function exitTimeline() {
   })
   .then(response => {
     if (response.ok) {
-      displayStatus("Ninguém está usando o Timeline.");
+      displayStatus("Ninguem esta usando o Timeline.");
     } else {
-      displayStatus("Erro ao registrar saída.");
+      displayStatus("Erro ao registrar saida.");
     }
   })
   .catch(error => {
-    displayStatus("Erro ao registrar saída.");
+    displayStatus("Erro ao registrar saida.");
   });
 }
 
@@ -48,10 +48,10 @@ function checkTimelineStatus() {
     .then(response => response.json())
     .then(data => {
       if (data.status) {
-        displayStatus("Alguém está usando o Timeline.");
+        displayStatus("Alguem esta usando o Timeline.");
         displayLastAccess(data.name, data.timestamp);
       } else {
-        displayStatus("Ninguém está usando o Timeline.");
+        displayStatus("Ninguem esta usando o Timeline.");
         displayLastAccess("", "");
       }
     })
@@ -69,7 +69,7 @@ function displayStatus(status) {
 function displayLastAccess(name, timestamp) {
   var lastAccessDiv = document.getElementById("lastAccess");
   if (name && timestamp) {
-    lastAccessDiv.textContent = "Último acesso: " + timestamp + " por " + name;
+    lastAccessDiv.textContent = "Ultimo acesso: " + timestamp + " por " + name;
   } else {
     lastAccessDiv.textContent = "";
   }
