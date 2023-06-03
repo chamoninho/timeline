@@ -14,7 +14,7 @@ firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
 
 // Referenciar o nó "timeline" no banco de dados
-var timelineRef = database.ref("timeline");
+var timelineRef = database.ref("exxatatimeline");
 
 // Função para registrar a entrada do usuário
 function registerEntry(name) {
