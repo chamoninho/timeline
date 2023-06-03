@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro do Timeline</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registro do Timeline</h1>
+    <form id="entryForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" required>
+      <button type="submit">Entrei no Timeline!</button>
+    </form>
+    <button onclick="exitTimeline()">Saí do Timeline!</button>
+    <button onclick="checkTimelineStatus()">Tem alguém usando o Timeline?</button>
+    <div id="status"></div>
+    <div id="lastAccess"></div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
