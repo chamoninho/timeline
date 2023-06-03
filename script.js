@@ -1,10 +1,10 @@
 // Configurar a conexão com o Firebase
 var firebaseConfig = {
-  apiKey: "SUA_API_KEY",
-  authDomain: "SEU_DOMINIO.firebaseapp.com",
-  projectId: "SEU_PROJECT_ID",
-  databaseURL: "https://SEU_PROJECT_ID-default-rtdb.firebaseio.com",
-  storageBucket: "SEU_PROJECT_ID.appspot.com",
+  apiKey: "AIzaSyCp37eYY4iaaV4u9DQDAvP0ryJ36zhj5xI",
+  authDomain: "exxatatimeline.firebaseapp.com",
+  projectId: "exxatatimeline",
+  databaseURL: "https://1:335024989606:web:e49ce0ca1e30438c951b67-default-rtdb.firebaseio.com",
+  storageBucket: "exxatatimeline.appspot.com",
 };
 firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
