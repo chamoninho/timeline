@@ -3,7 +3,7 @@ var firebaseConfig = {
   apiKey: "AIzaSyCp37eYY4iaaV4u9DQDAvP0ryJ36zhj5xI",
   authDomain: "exxatatimeline.firebaseapp.com",
   projectId: "exxatatimeline",
-  databaseURL: "https://1:335024989606:web:e49ce0ca1e30438c951b67-default-rtdb.firebaseio.com",
+  databaseURL: "https://exxatatimeline-default-rtdb.firebaseio.com",
   storageBucket: "exxatatimeline.appspot.com",
 };
 firebase.initializeApp(firebaseConfig);
