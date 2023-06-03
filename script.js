@@ -1,3 +1,24 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCp37eYY4iaaV4u9DQDAvP0ryJ36zhj5xI",
+  authDomain: "exxatatimeline.firebaseapp.com",
+  projectId: "exxatatimeline",
+  storageBucket: "exxatatimeline.appspot.com",
+  messagingSenderId: "335024989606",
+  appId: "1:335024989606:web:e49ce0ca1e30438c951b67",
+  measurementId: "G-8J4GQ9VD38"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 // Configurar a conexão com o Firebase
 var firebaseConfig = {
   apiKey: "AIzaSyCp37eYY4iaaV4u9DQDAvP0ryJ36zhj5xI",
