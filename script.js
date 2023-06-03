@@ -1,11 +1,15 @@
 // Configurar a conexão com o Firebase
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyCp37eYY4iaaV4u9DQDAvP0ryJ36zhj5xI",
   authDomain: "exxatatimeline.firebaseapp.com",
-  projectId: "exxatatimeline",
   databaseURL: "https://exxatatimeline-default-rtdb.firebaseio.com",
+  projectId: "exxatatimeline",
   storageBucket: "exxatatimeline.appspot.com",
+  messagingSenderId: "335024989606",
+  appId: "1:335024989606:web:e49ce0ca1e30438c951b67",
+  measurementId: "G-8J4GQ9VD38"
 };
+
 firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
 
@@ -16,7 +20,7 @@ var timelineRef = database.ref("timeline");
 function registerEntry(name) {
   timelineRef.set({
     name: name,
-    timestamp: new Date().toLocaleString(),
+    timestamp: new Date().toLocaleString()
   });
 }
 
